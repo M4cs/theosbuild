@@ -34,7 +34,8 @@ COPY *.mm /root/$TWEAK_NAME/ # Change to *.xm or add a line with *.xm if using l
 COPY *.h /root/$TWEAK_NAME/
 COPY Makefile /root/$TWEAK_NAME/
 
-Place an id_rsa, id_rsa.pub, and known_hosts into your tweak directory that is pre-authed with your device.
+# Place an id_rsa, id_rsa.pub, and known_hosts into your
+# tweak directory that is pre-authed with your device.
 COPY id_rsa /root/.ssh/id_rsa
 COPY id_rsa.pub /root/.ssh/id_rsa.pub
 COPY known_hosts /root/.ssh/known_hosts
